@@ -15,8 +15,6 @@ RUN go mod download
 # Копируем файлы go в рабочую директорию
 COPY *.go ./
 
-RUN CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -o /exefile .
+RUN CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -o /main main.go
 
-# Указываем команду, которая будет выполняться при запуске контейнера
 CMD ["/main"]
-

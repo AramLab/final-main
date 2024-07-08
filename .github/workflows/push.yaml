@@ -38,7 +38,7 @@ jobs:
         with:
           images: aram04/hello-golang
 
-      - name: Build and push Docker Inage
+      - name: Build and push Docker Image
         uses: docker/build-push-action@v5
         with:
           context: .

@@ -36,7 +36,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@v5.5.1
         with:
-          images: aram04/hello-golang
+          images: aram04/final-main
 
       - name: Build and push Docker Image
         uses: docker/build-push-action@v5
